@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniels Car Accessories | Premium Auto Parts & Gear</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🚗</div>
+        Daniels <span style="color:var(--accent)">Car</span> Accessories
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="truck-rental.html">Truck Rental</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search products...">
+          <button aria-label="Search">🔍</button>
+        </div>
+        <div class="auth-area"></div>
+        <a href="cart.html" class="cart-btn" title="Cart">
+          🛒
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <button class="close-mobile">✕</button>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="truck-rental.html">Truck Rental</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+
+  <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides">
+      <div class="slide active">
+        <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80')"></div>
+        <div class="slide-content">
+          <span class="tag">NEW ARRIVALS</span>
+          <h1>Upgrade Your Drive</h1>
+          <p>Premium car accessories designed for performance, style and comfort. Free shipping on orders over £100.</p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="shop.html" class="btn btn-primary">Shop Now →</a>
+            <a href="shop.html" class="btn btn-outline">View Best Sellers</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80')"></div>
+        <div class="slide-content">
+          <span class="tag">LIGHTING</span>
+          <h1>See Further. Drive Safer.</h1>
+          <p>LED headlights, ambient kits and performance lighting that transform your vehicle after dark.</p>
+          <a href="shop.html" class="btn btn-primary">Explore Lighting</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1600&q=80')"></div>
+        <div class="slide-content">
+          <span class="tag">ELECTRONICS</span>
+          <h1>Smart Tech for Your Ride</h1>
+          <p>Dash cams, wireless chargers and phone mounts that keep you connected and protected.</p>
+          <a href="shop.html" class="btn btn-primary">Shop Electronics</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <div class="slider-arrows">
+        <button class="arrow-prev" aria-label="Previous">‹</button>
+        <button class="arrow-next" aria-label="Next">›</button>
+      </div>
+      <div class="slider-dots">
+        <button class="dot active" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop by <span style="color:var(--accent)">Category</span></h2>
+        <p>Everything your car needs, carefully curated</p>
+      </div>
+      <div class="categories-grid">
+        <a href="shop.html" class="category-card" data-category="Interior">
+          <div class="category-icon">🪑</div>
+          <h3>Interior</h3>
+          <p>Seat covers, mats & more</p>
+        </a>
+        <a href="shop.html" class="category-card" data-category="Lighting">
+          <div class="category-icon">💡</div>
+          <h3>Lighting</h3>
+          <p>LED kits & ambient lights</p>
+        </a>
+        <a href="shop.html" class="category-card" data-category="Electronics">
+          <div class="category-icon">📱</div>
+          <h3>Electronics</h3>
+          <p>Dash cams & chargers</p>
+        </a>
+        <a href="shop.html" class="category-card" data-category="Exterior">
+          <div class="category-icon">🛡️</div>
+          <h3>Exterior</h3>
+          <p>Guards, covers & style</p>
+        </a>
+        <a href="shop.html" class="category-card" data-category="Performance">
+          <div class="category-icon">⚡</div>
+          <h3>Performance</h3>
+          <p>Filters & upgrades</p>
+        </a>
+        <a href="shop.html" class="category-card" data-category="Storage">
+          <div class="category-icon">📦</div>
+          <h3>Storage</h3>
+          <p>Organizers & holders</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured <span style="color:var(--accent)">Products</span></h2>
+        <p>Top picks loved by drivers like you</p>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Filled by JS -->
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="shop.html" class="btn btn-primary">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="promo-banner">
+        <div>
+          <h2>Free Shipping on Orders Over £100</h2>
+          <p>Plus 30-day hassle-free returns on every item</p>
+        </div>
+        <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Drivers Choose <span style="color:var(--accent)">Daniels</span></h2>
+        <p>Built for comfort, safety and style on every trip.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Fast dispatch</h3>
+          <p>Get your accessories shipped quickly with secure packaging.</p>
+        </div>
+        <div class="trust-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Quality guaranteed</h3>
+          <p>Only premium fittings, durable materials and tested products.</p>
+        </div>
+        <div class="trust-card">
+          <div class="feature-icon">💬</div>
+          <h3>Expert support</h3>
+          <p>Need help choosing the right fit? We’re here for every question.</p>
+        </div>
+        <div class="trust-card">
+          <div class="feature-icon">⭐</div>
+          <h3>4.8/5 customer rating</h3>
+          <p>Drivers trust us for reliable upgrades and everyday essentials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Drivers Say</h2>
+        <p>Real feedback from customers upgrading their rides.</p>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“The LED headlight kit transformed night driving. The install was easy and the quality feels premium.”</p>
+          <div class="reviewer">
+            <strong>Marcus T.</strong>
+            <span>Ford Focus owner</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“I bought a dash cam and phone mount together. Everything arrives quickly and feels like a proper upgrade.”</p>
+          <div class="reviewer">
+            <strong>Sophie L.</strong>
+            <span>BMW 3 Series owner</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“The seat covers look incredible and the quality is much better than expected. Highly recommend.”</p>
+          <div class="reviewer">
+            <strong>Daniel R.</strong>
+            <span>VW Golf owner</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container faq-wrap">
+      <div class="faq-info">
+        <span class="tag">FAQ</span>
+        <h2>Everything you need to know before you buy.</h2>
+        <p>We make it simple to find the right accessories for your vehicle and budget.</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Do you offer free shipping?</summary>
+          <p>Yes. Orders over £100 qualify for free shipping across the UK, with tracking included.</p>
+        </details>
+        <details>
+          <summary>How do I know the accessory fits my car?</summary>
+          <p>We recommend checking product fitment details on each item, and our team can also help confirm compatibility.</p>
+        </details>
+        <details>
+          <summary>Do you accept returns?</summary>
+          <p>Absolutely. We offer a 30-day return window on eligible items in original condition.</p>
+        </details>
+        <details>
+          <summary>Do you sell vehicle-specific kits?</summary>
+          <p>Yes. Our range includes universal and model-friendly upgrades for most popular car makes and styles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter-section">
+    <div class="container newsletter-box">
+      <div>
+        <span class="tag">SAVE 10%</span>
+        <h2>Get exclusive deals and car care tips.</h2>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+        <button type="submit" class="btn btn-primary">Join Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🚗</div>
+            Daniels Car Accessories
+          </a>
+          <p>Your trusted source for premium car accessories. Quality gear that elevates every drive.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">Best Sellers</a>
+          <a href="shop.html">New Arrivals</a>
+          <a href="shop.html">On Sale</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Daniels Car Accessories. All rights reserved. Built with pure HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/products.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

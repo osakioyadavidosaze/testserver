@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Daniels Car Accessories</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🚗</div>
+        Daniels <span style="color:var(--accent)">Car</span> Accessories
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="truck-rental.html">Truck Rental</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search products...">
+          <button aria-label="Search">🔍</button>
+        </div>
+        <div class="auth-area"></div>
+        <a href="cart.html" class="cart-btn">🛒 <span class="cart-count" style="display:none">0</span></a>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <button class="close-mobile">✕</button>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="truck-rental.html">Truck Rental</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Shop All Products</h1>
+      <p>Premium accessories for every ride</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="shop-toolbar">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Interior">Interior</button>
+          <button class="filter-btn" data-category="Lighting">Lighting</button>
+          <button class="filter-btn" data-category="Electronics">Electronics</button>
+          <button class="filter-btn" data-category="Storage">Storage</button>
+          <button class="filter-btn" data-category="Exterior">Exterior</button>
+          <button class="filter-btn" data-category="Performance">Performance</button>
+          <button class="filter-btn" data-category="Car Parts">Car Parts</button>
+          <button class="filter-btn" data-category="Truck Parts">Truck Parts</button>
+        </div>
+        <select class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="products-grid" id="shop-products">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🚗</div>
+            Daniels Car Accessories
+          </a>
+          <p>Your trusted source for premium car accessories.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">Best Sellers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Daniels Car Accessories. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/products.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
